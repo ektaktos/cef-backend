@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "problems",
+  "info": {
+    "name": "Problems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "problem": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "solution": {
+      "type": "richtext",
+      "required": true
+    },
+    "categories": {
+      "via": "problems",
+      "collection": "category"
+    }
+  }
+}
